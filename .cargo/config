@@ -1,0 +1,4 @@
+# in .cargo/config
+[build]
+#target = "aarch64-unknown-none"
+target = "x86_64-walle_os.json"

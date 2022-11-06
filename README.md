@@ -21,3 +21,22 @@
 $ rustup target add aarch64-unknown-none
 $ cargo build --target aarch64-unknown-none
 ```
+
+## 在qemu-system-x86_64上测试
+
+```bash
+$ rustup target add x86_64-unknown-none
+$ ./build.sh
+```
+
+运行以上指令，会生产`target/x86_64-walle_os/debug/bootimage-walle_os.bin`
+
+### 启动qemu
+
+```bash
+qemu-system-x86_64 -drive format=raw,file=target/x86_64-walle_os/debug/bootimage-walle_os.bin
+```
+
+运行结果
+
+![hellowalle](images/hellowalle.png)
