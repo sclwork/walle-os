@@ -26,7 +26,7 @@ $ cargo build --target aarch64-unknown-none
 
 ```bash
 $ rustup target add x86_64-unknown-none
-$ ./build.sh
+$ cargo bootimage
 ```
 
 运行以上指令，会生产`target/x86_64-walle_os/debug/bootimage-walle_os.bin`
